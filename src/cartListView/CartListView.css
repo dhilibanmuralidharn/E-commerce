@@ -1,0 +1,29 @@
+.cart-quantity-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-controller-button {
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .cart-quantity {
+    color: #52606d;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+    margin: 8px;
+    line-height: 1.3;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .cart-quantity {
+      font-size: 18px;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  }

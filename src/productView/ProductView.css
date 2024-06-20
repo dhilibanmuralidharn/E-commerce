@@ -1,0 +1,220 @@
+.groups-desktop {
+    display: flex;
+    line-height: 28px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 300px;
+    margin-left: 0px;
+   }
+   
+   .inputs-desktop {
+    width: 300px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .inputs-desktop::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .inputs-desktop:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icons-desktop {
+    position: relative;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+    padding-left: 5px;
+   }
+
+   .three-body {
+    --uib-size: 35px;
+    --uib-speed: 0.8s;
+    --uib-color: #5D3FD3;
+    position: relative;
+    display: inline-block;
+    height: var(--uib-size);
+    width: var(--uib-size);
+    animation: spin78236 calc(var(--uib-speed) * 2.5) infinite linear;
+   }
+   
+   .three-body__dot {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+   }
+   
+   .three-body__dot:after {
+    content: '';
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: var(--uib-color);
+    border-radius: 50%;
+   }
+   
+   .three-body__dot:nth-child(1) {
+    bottom: 5%;
+    left: 0;
+    transform: rotate(60deg);
+    transform-origin: 50% 85%;
+   }
+   
+   .three-body__dot:nth-child(1)::after {
+    bottom: 0;
+    left: 0;
+    animation: wobble1 var(--uib-speed) infinite ease-in-out;
+    animation-delay: calc(var(--uib-speed) * -0.3);
+   }
+   
+   .three-body__dot:nth-child(2) {
+    bottom: 5%;
+    right: 0;
+    transform: rotate(-60deg);
+    transform-origin: 50% 85%;
+   }
+   
+   .three-body__dot:nth-child(2)::after {
+    bottom: 0;
+    left: 0;
+    animation: wobble1 var(--uib-speed) infinite
+       calc(var(--uib-speed) * -0.15) ease-in-out;
+   }
+   
+   .three-body__dot:nth-child(3) {
+    bottom: -5%;
+    left: 0;
+    transform: translateX(116.666%);
+   }
+   
+   .three-body__dot:nth-child(3)::after {
+    top: 0;
+    left: 0;
+    animation: wobble2 var(--uib-speed) infinite ease-in-out;
+   }
+   
+   @keyframes spin78236 {
+    0% {
+     transform: rotate(0deg);
+    }
+   
+    100% {
+     transform: rotate(360deg);
+    }
+   }
+   
+   @keyframes wobble1 {
+    0%,
+     100% {
+     transform: translateY(0%) scale(1);
+     opacity: 1;
+    }
+   
+    50% {
+     transform: translateY(-66%) scale(0.65);
+     opacity: 0.8;
+    }
+   }
+   
+   @keyframes wobble2 {
+    0%,
+     100% {
+     transform: translateY(0%) scale(1);
+     opacity: 1;
+    }
+   
+    50% {
+     transform: translateY(66%) scale(0.65);
+     opacity: 0.8;
+    }
+   }
+   .products-error-view-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    padding-bottom: 64px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .products-error-view-container {
+      margin-top: 0px;
+      margin-left: 30px;
+      width: 70%;
+      padding-bottom: 0;
+    }
+  }
+  
+  .products-failure-img {
+    width: 250px;
+    height: 200px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .products-failure-img {
+      width: 400px;
+      height: 350px;
+    }
+  }
+  
+  .product-failure-heading-text {
+    color: #171f46;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .product-failure-heading-text {
+      font-size: 24px;
+    }
+  }
+  
+  .products-failure-description {
+    text-align: center;
+    color: #64748b;
+    font-family: 'Roboto';
+    font-size: 14px;
+    width: 90%;
+    max-width: 288px;
+    line-height: 1.3;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .products-failure-description {
+      font-size: 18px;
+      width: 60%;
+      max-width: 466px;
+    }
+  }   
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.products-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
